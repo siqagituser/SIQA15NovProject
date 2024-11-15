@@ -7,3 +7,66 @@ packages:
   gitUrl: https://github.com/siqagituser
   gitUsername: siqagituser
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
+services:
+- serviceName: project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1511
+  packages:
+  - name: SIQA15NovProject
+    version: "1.0"
+- serviceName: project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: SIQA15NovProject
+    version: "1.0"
+- serviceName: project.siqa15nov.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA15NovProject
+    version: "1.0"
+configurationVariables:
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.user
+  : sa
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.serverName
+  : vmiboint01
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.password
+  : "{AES}EXBfDiMpFsKgNmmCb82oYQ=="
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionEnabled
+  : "false"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.databaseName
+  : SIQACloud
