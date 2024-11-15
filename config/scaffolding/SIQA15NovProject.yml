@@ -10,6 +10,11 @@ packages:
 - name: WmJDBCAdapter
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
+- name: TPP_services_in_FCS
+  gitServerName: SIQA_kvv_wm_io
+  gitUrl: https://github.webmethods.io/kvv
+  gitUsername: kvv
+  gitBranch: main
 services:
 - serviceName: project.siqa15nov.integrations:SIQAAdapterFlow
   packages:
@@ -20,12 +25,6 @@ services:
   - name: SIQA15NovProject
     version: "1.0"
 configurationVariables:
-  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.user
-  : sa
-  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.serverName
-  : vmiboint01
-  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.portNumber
-  : "1433"
   ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.password
   : "{AES}B2Xqma4Ost5nVUiXctJydQ=="
   ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.trustStore
@@ -36,6 +35,12 @@ configurationVariables:
   : ""
   ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionEnabled
   : "false"
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.user
+  : sa
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.serverName
+  : vmiboint01
+  ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.portNumber
+  : "1433"
   ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.otherProperties
   : loginTimeout=60;driverType=thin;
   ? artConnection.SIQA15NovProject.project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1511.connectionSettings.datasourceClass
