@@ -11,15 +11,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1511
-  packages:
-  - name: SIQA15NovProject
-    version: "1.0"
-- serviceName: project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
-  packages:
-  - name: SIQA15NovProject
-    version: "1.0"
 - serviceName: project.siqa15nov.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA15NovProject
+    version: "1.0"
+- serviceName: project.siqa15nov.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBAAc
   packages:
   - name: SIQA15NovProject
     version: "1.0"
